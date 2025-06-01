@@ -1,0 +1,8 @@
+relationship AutoDetected_5099af23-b436-46a9-bf35-4c72a917190f
+	fromColumn: FactResellerSales.EmployeeKey
+	toColumn: DimEmployee.EmployeeKey
+
+relationship 83192fcf-2b34-5f5b-7bfc-e4be2ea391c9
+	fromColumn: FactResellerSales.OrderDateKey
+	toColumn: DimDate.DateKey
+

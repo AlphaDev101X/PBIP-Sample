@@ -1,0 +1,168 @@
+table DimDate
+	lineageTag: 13f67050-0c2c-46e5-a9ef-b739d35f61b7
+
+	column DateKey
+		dataType: string
+		lineageTag: 16f74e1f-b718-4703-ab83-6b2305735379
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullDateAlternateKey
+		dataType: string
+		lineageTag: 90a46521-2746-4aea-b26e-e0a35e7c2ade
+		summarizeBy: none
+		sourceColumn: FullDateAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayNumberOfWeek
+		dataType: string
+		lineageTag: 8fa47097-bfb5-4e6f-b795-6c63a8ede781
+		summarizeBy: none
+		sourceColumn: DayNumberOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishDayNameOfWeek
+		dataType: string
+		lineageTag: bc5b3b1e-5bb3-4f9b-a220-d8247d4e2c9d
+		summarizeBy: none
+		sourceColumn: EnglishDayNameOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishDayNameOfWeek
+		dataType: string
+		lineageTag: 05bdb420-057d-4ca9-b9c7-ef454ad6f684
+		summarizeBy: none
+		sourceColumn: SpanishDayNameOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchDayNameOfWeek
+		dataType: string
+		lineageTag: 91f91b58-5be0-4afe-b60e-0a641fc6c36b
+		summarizeBy: none
+		sourceColumn: FrenchDayNameOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayNumberOfMonth
+		dataType: string
+		lineageTag: 3e50545c-57d6-41c2-9d73-2ffafb3a82e5
+		summarizeBy: none
+		sourceColumn: DayNumberOfMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayNumberOfYear
+		dataType: string
+		lineageTag: 9740dbf4-6b12-4334-9c0d-8e6f30befc0a
+		summarizeBy: none
+		sourceColumn: DayNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekNumberOfYear
+		dataType: string
+		lineageTag: 64a05352-8872-4419-bde1-92c8c1d90679
+		summarizeBy: none
+		sourceColumn: WeekNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishMonthName
+		dataType: string
+		lineageTag: a1baf3d4-f775-4170-8747-3d77e16dd869
+		summarizeBy: none
+		sourceColumn: EnglishMonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishMonthName
+		dataType: string
+		lineageTag: 197f2d66-5bf4-4f2b-84ed-05535ba6ea03
+		summarizeBy: none
+		sourceColumn: SpanishMonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchMonthName
+		dataType: string
+		lineageTag: 0514db0d-d4d8-4ecf-a00c-41343fae9d0e
+		summarizeBy: none
+		sourceColumn: FrenchMonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumberOfYear
+		dataType: string
+		lineageTag: da4bf296-d91d-4b0c-b49e-9020d0af088d
+		summarizeBy: none
+		sourceColumn: MonthNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarQuarter
+		dataType: string
+		lineageTag: 13edcdd5-8815-48a0-bcee-b9d65eabad04
+		summarizeBy: none
+		sourceColumn: CalendarQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarYear
+		dataType: string
+		lineageTag: 1299b7d9-7241-4393-849a-a46cfbb7deaa
+		summarizeBy: none
+		sourceColumn: CalendarYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarSemester
+		dataType: string
+		lineageTag: 9776b4a6-04c3-4aef-87e6-6ff57880f11a
+		summarizeBy: none
+		sourceColumn: CalendarSemester
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalQuarter
+		dataType: string
+		lineageTag: 18e18a8a-c78a-43e5-8cec-264be4f962d7
+		summarizeBy: none
+		sourceColumn: FiscalQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalYear
+		dataType: string
+		lineageTag: 9822de4d-60b9-4b03-947a-ac9aabd89a96
+		summarizeBy: none
+		sourceColumn: FiscalYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalSemester
+		dataType: string
+		lineageTag: 4a4013e6-4a4e-477e-a696-6f9646c4b42a
+		summarizeBy: none
+		sourceColumn: FiscalSemester
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Hassan.Aftab\Downloads\FabricAdventureWorksLakehouse-main\FabricAdventureWorksLakehouse-main\AdventureWorks\DimDate.csv"),[Delimiter=",", Columns=19, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+				in
+				    #"Promoted Headers"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

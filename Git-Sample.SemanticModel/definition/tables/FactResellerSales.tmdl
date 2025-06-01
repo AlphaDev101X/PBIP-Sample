@@ -1,0 +1,232 @@
+table FactResellerSales
+	lineageTag: 50f1843f-ecd1-4e86-a567-7857a955ca4e
+
+	column ProductKey
+		dataType: string
+		lineageTag: 16905d72-ad43-4e8c-bbf7-c183e38f9881
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderDateKey
+		dataType: string
+		lineageTag: 2e96b750-b447-4495-bd0d-eb79abf9ffb1
+		summarizeBy: none
+		sourceColumn: OrderDateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column DueDateKey
+		dataType: string
+		lineageTag: 61e6f7ad-b2a3-4608-8013-d81d2e0f3cbc
+		summarizeBy: none
+		sourceColumn: DueDateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ShipDateKey
+		dataType: string
+		lineageTag: 67330c9f-8898-4402-8d82-17bfaffbf9f2
+		summarizeBy: none
+		sourceColumn: ShipDateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResellerKey
+		dataType: string
+		lineageTag: 15b393a6-dbe0-437b-b1bb-2f3511834341
+		summarizeBy: none
+		sourceColumn: ResellerKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmployeeKey
+		dataType: string
+		lineageTag: c6faebfc-17a6-4cf0-adb0-210ec8261cb2
+		summarizeBy: none
+		sourceColumn: EmployeeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column PromotionKey
+		dataType: string
+		lineageTag: 2ba9a50a-39b2-4f61-a181-f18717cd0453
+		summarizeBy: none
+		sourceColumn: PromotionKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrencyKey
+		dataType: string
+		lineageTag: b1e5c6d8-1072-4062-a72d-a54aca33a7c6
+		summarizeBy: none
+		sourceColumn: CurrencyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesTerritoryKey
+		dataType: string
+		lineageTag: 5e46dc39-ddd0-4c75-98d6-1e494a1dc3ea
+		summarizeBy: none
+		sourceColumn: SalesTerritoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesOrderNumber
+		dataType: string
+		lineageTag: e64d357c-cb1c-498d-b409-be31d49b36d2
+		summarizeBy: none
+		sourceColumn: SalesOrderNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesOrderLineNumber
+		dataType: string
+		lineageTag: bca904b1-f40d-439d-9f51-b4f7cd73016e
+		summarizeBy: none
+		sourceColumn: SalesOrderLineNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column RevisionNumber
+		dataType: string
+		lineageTag: 9d51cd72-5c86-47d4-9be2-76f67de5234b
+		summarizeBy: none
+		sourceColumn: RevisionNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderQuantity
+		dataType: string
+		lineageTag: c602320d-c395-4af8-9fdf-4d1ee397f50c
+		summarizeBy: none
+		sourceColumn: OrderQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitPrice
+		dataType: string
+		lineageTag: 70a4f21e-e139-4845-9566-2a89d544e1c4
+		summarizeBy: none
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = Automatic
+
+	column ExtendedAmount
+		dataType: string
+		lineageTag: 75ac94e5-3970-415f-8a3a-56f5fba99fe6
+		summarizeBy: none
+		sourceColumn: ExtendedAmount
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitPriceDiscountPct
+		dataType: string
+		lineageTag: 06f012c2-5476-4794-b99f-81b1389e9b9e
+		summarizeBy: none
+		sourceColumn: UnitPriceDiscountPct
+
+		annotation SummarizationSetBy = Automatic
+
+	column DiscountAmount
+		dataType: string
+		lineageTag: a84f5c85-1dcc-42c5-bee1-0b8a1915c408
+		summarizeBy: none
+		sourceColumn: DiscountAmount
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductStandardCost
+		dataType: string
+		lineageTag: 60920523-2b6d-4004-90c1-3fb0a27ffe57
+		summarizeBy: none
+		sourceColumn: ProductStandardCost
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalProductCost
+		dataType: string
+		lineageTag: 88b8c872-656a-4186-9002-c6b32eb57a45
+		summarizeBy: none
+		sourceColumn: TotalProductCost
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesAmount
+		dataType: string
+		lineageTag: 6a56772c-8342-4355-85d6-3fa06bb180d9
+		summarizeBy: none
+		sourceColumn: SalesAmount
+
+		annotation SummarizationSetBy = Automatic
+
+	column TaxAmt
+		dataType: string
+		lineageTag: e123a886-d719-4ef7-bea0-0418dba93f94
+		summarizeBy: none
+		sourceColumn: TaxAmt
+
+		annotation SummarizationSetBy = Automatic
+
+	column Freight
+		dataType: string
+		lineageTag: 483d7b2d-9ed5-4a2c-b42b-5a8948489a7c
+		summarizeBy: none
+		sourceColumn: Freight
+
+		annotation SummarizationSetBy = Automatic
+
+	column CarrierTrackingNumber
+		dataType: string
+		lineageTag: ee6213f6-c541-4c8e-a3f4-11c4c79d6607
+		summarizeBy: none
+		sourceColumn: CarrierTrackingNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerPONumber
+		dataType: string
+		lineageTag: e57b162d-076d-4702-a3a7-208a977aa36d
+		summarizeBy: none
+		sourceColumn: CustomerPONumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderDate
+		dataType: string
+		lineageTag: 2e7347dd-9f33-4a79-8af1-51248add8b53
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column DueDate
+		dataType: string
+		lineageTag: fb5ead44-47fe-4555-918f-020c79335a62
+		summarizeBy: none
+		sourceColumn: DueDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column ShipDate
+		dataType: string
+		lineageTag: a2833470-c505-4aeb-b119-d747835b3682
+		summarizeBy: none
+		sourceColumn: ShipDate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactResellerSales = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Hassan.Aftab\Downloads\FabricAdventureWorksLakehouse-main\FabricAdventureWorksLakehouse-main\AdventureWorks\FactResellerSales.csv"),[Delimiter=",", Columns=27, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+				in
+				    #"Promoted Headers"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

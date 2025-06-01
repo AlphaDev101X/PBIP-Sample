@@ -1,0 +1,264 @@
+table DimEmployee
+	lineageTag: 1742e623-9598-4700-a660-7824bc73be4b
+
+	column EmployeeKey
+		dataType: string
+		lineageTag: a598b075-ee67-4424-8e74-0b62f2d351e7
+		summarizeBy: none
+		sourceColumn: EmployeeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ParentEmployeeKey
+		dataType: string
+		lineageTag: ac22a7e2-c2ba-4756-aaea-0d420bda0a12
+		summarizeBy: none
+		sourceColumn: ParentEmployeeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmpNatIDAltKey
+		dataType: string
+		lineageTag: 423e72c1-9653-4194-8882-8a17f0150653
+		summarizeBy: none
+		sourceColumn: EmpNatIDAltKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ParentEmpNatIDAltKey
+		dataType: string
+		lineageTag: 26be6fb1-9002-49ce-9bf7-4a568a048fd4
+		summarizeBy: none
+		sourceColumn: ParentEmpNatIDAltKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesTerritoryKey
+		dataType: string
+		lineageTag: afb70ebe-0cdc-4417-8d2f-bd6b1b92bb7d
+		summarizeBy: none
+		sourceColumn: SalesTerritoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		lineageTag: 42428adc-4c9c-4816-b6c7-0caa644188fb
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		lineageTag: 63d628c5-4532-47ea-8e0e-9e411475bf93
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MiddleName
+		dataType: string
+		lineageTag: 64fad000-a88a-4c44-8e71-74e7cbd767ab
+		summarizeBy: none
+		sourceColumn: MiddleName
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameStyle
+		dataType: string
+		lineageTag: 092d00c2-1972-47f9-a4f5-7280f576beff
+		summarizeBy: none
+		sourceColumn: NameStyle
+
+		annotation SummarizationSetBy = Automatic
+
+	column Title
+		dataType: string
+		lineageTag: 942e2fb5-606f-4e99-a373-07ebdcd983ee
+		summarizeBy: none
+		sourceColumn: Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column HireDate
+		dataType: string
+		lineageTag: 3ee90479-5f54-41b5-956a-6ea7a7552508
+		summarizeBy: none
+		sourceColumn: HireDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column BirthDate
+		dataType: string
+		lineageTag: 59a0fa49-f404-4b64-ae56-f1afb38df51d
+		summarizeBy: none
+		sourceColumn: BirthDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoginID
+		dataType: string
+		lineageTag: 5153e4f5-0f64-4ed0-904f-9afb231afe7d
+		summarizeBy: none
+		sourceColumn: LoginID
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmailAddress
+		dataType: string
+		lineageTag: a4dc3959-8531-4c3a-86f1-1f6dfe73505a
+		summarizeBy: none
+		sourceColumn: EmailAddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		lineageTag: 6657726c-a1c5-43d0-9679-fc97b8e4af50
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaritalStatus
+		dataType: string
+		lineageTag: 78ddc364-2c51-4abd-ae07-9b81db759dcf
+		summarizeBy: none
+		sourceColumn: MaritalStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmergencyContactName
+		dataType: string
+		lineageTag: 150d7729-9350-4faf-8cf3-81b24f064c83
+		summarizeBy: none
+		sourceColumn: EmergencyContactName
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmergencyContactPhone
+		dataType: string
+		lineageTag: c71c7361-c2d9-4d27-ba15-6955229075ed
+		summarizeBy: none
+		sourceColumn: EmergencyContactPhone
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalariedFlag
+		dataType: string
+		lineageTag: e4952580-85b3-4f04-9e5b-d7246960db5a
+		summarizeBy: none
+		sourceColumn: SalariedFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: b1f426d6-40f6-4a74-85d0-f4dc8b3a1006
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column PayFrequency
+		dataType: string
+		lineageTag: 38afd359-9163-496a-b503-9b85d1d0a21a
+		summarizeBy: none
+		sourceColumn: PayFrequency
+
+		annotation SummarizationSetBy = Automatic
+
+	column BaseRate
+		dataType: string
+		lineageTag: 1d0a4780-8a03-4db1-9a80-d1a1dbf6dd44
+		summarizeBy: none
+		sourceColumn: BaseRate
+
+		annotation SummarizationSetBy = Automatic
+
+	column VacationHours
+		dataType: string
+		lineageTag: a1ac936d-13f5-4c16-be26-8cd8042cc305
+		summarizeBy: none
+		sourceColumn: VacationHours
+
+		annotation SummarizationSetBy = Automatic
+
+	column SickLeaveHours
+		dataType: string
+		lineageTag: 5c65dca3-7dc2-44d4-8388-33b3bf039d22
+		summarizeBy: none
+		sourceColumn: SickLeaveHours
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrentFlag
+		dataType: string
+		lineageTag: 6f1f7d24-1587-4751-a65e-f62c7a4f63c4
+		summarizeBy: none
+		sourceColumn: CurrentFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesPersonFlag
+		dataType: string
+		lineageTag: a6a8a6a0-2fa9-4a36-9c3a-b04416104f41
+		summarizeBy: none
+		sourceColumn: SalesPersonFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column DepartmentName
+		dataType: string
+		lineageTag: 2cec2efa-c746-422c-970f-ba2235856b5f
+		summarizeBy: none
+		sourceColumn: DepartmentName
+
+		annotation SummarizationSetBy = Automatic
+
+	column StartDate
+		dataType: string
+		lineageTag: 8f645db5-b647-48ed-851e-cb9e7e5ae3c3
+		summarizeBy: none
+		sourceColumn: StartDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column EndDate
+		dataType: string
+		lineageTag: 7c85f58c-f716-40ba-8720-60fb923d7247
+		summarizeBy: none
+		sourceColumn: EndDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: ecb545cc-4505-463e-84c2-b31b4194294a
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmployeePhoto
+		dataType: string
+		lineageTag: 45e4efc4-8e05-4adc-a322-4eeedfe9b98b
+		summarizeBy: none
+		sourceColumn: EmployeePhoto
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimEmployee = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Hassan.Aftab\Downloads\FabricAdventureWorksLakehouse-main\FabricAdventureWorksLakehouse-main\AdventureWorks\DimEmployee.csv"),[Delimiter=",", Columns=31, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+				in
+				    #"Promoted Headers"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
