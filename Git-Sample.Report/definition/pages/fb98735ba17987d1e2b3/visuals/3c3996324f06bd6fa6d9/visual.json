@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
   "name": "3c3996324f06bd6fa6d9",
   "position": {
     "x": 54.044444444444444,
@@ -98,7 +98,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'M'"
+                                "Value": "'F'"
                               }
                             }
                           ]
@@ -129,5 +129,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "55cb5f4ae2aec309ce63",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimEmployee"
+              }
+            },
+            "Property": "Gender"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

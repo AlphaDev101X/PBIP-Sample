@@ -249,6 +249,12 @@ table DimEmployee
 
 		annotation SummarizationSetBy = Automatic
 
+	column TaxFree = IF(DimEmployee[MaritalStatus] = "M", "TaxExempted","TaxLiable")
+		lineageTag: 29cdd34c-3f3a-40c9-a000-16f4ed17bf30
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition DimEmployee = m
 		mode: import
 		source =
